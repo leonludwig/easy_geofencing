@@ -115,6 +115,10 @@ class EasyGeofencing {
       _positionStream!.cancel();
       _positionStream = null;
     }
+    if (_geoFencestream != null) {
+      _geoFencestream!.cancel();
+      _geoFencestream = null;
+    }
   }
 
   ///
